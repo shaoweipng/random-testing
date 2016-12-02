@@ -1,0 +1,11 @@
+name: 'Simple test task'
+description: 'Task that sends live logs and user metrics'
+setup_command: 'bash setup.sh'
+command: 'python run.py'
+parameters:
+  random_seed: 123
+permissions:
+  owners: 'pa-seattle'
+resources:
+  cluster: 'simcloud-l4.apple.com'
+  num_gpus: 0
